@@ -1,12 +1,14 @@
 import { Card, ListGroup } from "react-bootstrap";
 import PropTypes from 'prop-types';
+import imagen from 'src/components/assets/titanic.jpg'
 
 const Tarjeta = ({ movie }) => {
     return (
         <Card className="bg-light p-2">
             <Card.Img
                 variant="top"
-                src={movie.img.src}
+                src={imagen}
+                //src={movie.img.src}
                 alt={movie.img.alt}
                 width='200'
             />
