@@ -9,7 +9,7 @@ const List = () => {
 
     const traerData = async () => {
 
-        const movies = await fetch('src/components/assets/data.json');
+        const movies = await fetch('../../src/components/assets/data.json');
         const moviesJSON = await movies.json();
 
         console.log(moviesJSON)
