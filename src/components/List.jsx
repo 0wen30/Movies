@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Row, Col } from 'react-bootstrap'
+import moviesJSON from 'src/components/assets/data.json'
 import Tarjeta from './Tarjeta'
 
 const List = () => {
@@ -9,10 +10,9 @@ const List = () => {
 
     const traerData = async () => {
 
-        const movies = await fetch('src/components/assets/data.json');
-        const moviesJSON = await movies.json();
+        //const movies = await fetch('../../src/components/assets/data.json');
+        //const moviesJSON = await movies.json();
 
-        console.log(moviesJSON)
         if (moviesJSON) {
             setdata(moviesJSON);
             setloading(false);
